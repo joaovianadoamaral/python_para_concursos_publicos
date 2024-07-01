@@ -1,0 +1,14 @@
+def busca_sequencial(lista, alvo):
+    for elemento in lista:
+        if elemento == alvo:
+            return True  # Retorna True se o alvo for encontrado
+    return False  # Retorna False se o alvo não for encontrado
+
+# Exemplo de uso:
+lista = [3, 7, 2, 9, 4, 6, 1, 8, 5]
+alvo = 6
+encontrado = busca_sequencial(lista, alvo)
+if encontrado:
+    print(f'O alvo {alvo} foi encontrado na lista.')
+else:
+    print(f'O alvo {alvo} não foi encontrado na lista.')
